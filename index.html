@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Valentine</title>
+
+<style>
+body{
+background:linear-gradient(#ffe6ea,#ffb6c1);
+text-align:center;
+font-family:Arial;
+overflow:hidden;
+}
+
+h1{
+margin-top:150px;
+font-size:55px;
+color:#ff1a75;
+}
+
+button{
+padding:20px 40px;
+font-size:25px;
+margin:20px;
+border:none;
+border-radius:12px;
+background:#ff3366;
+color:white;
+cursor:pointer;
+}
+
+button:hover{transform:scale(1.1);}
+
+#yesText{
+display:none;
+font-size:40px;
+color:#ff1a75;
+margin-top:100px;
+}
+
+#clickHere{
+display:none;
+padding:18px 35px;
+font-size:22px;
+border:none;
+border-radius:12px;
+background:#ff3366;
+color:white;
+cursor:pointer;
+}
+
+#man,#girl{
+position:fixed;
+bottom:0;
+height:400px;
+opacity:0;
+}
+
+#man{left:-300px;}
+#girl{right:-300px;}
+
+#heart{
+position:fixed;
+width:260px;
+display:none;
+}
+</style>
+</head>
+
+<body>
+
+<h1 id="question">💌 Will You Be My Valentine? 💌</h1>
+
+<div id="buttons">
+<button id="yesBtn">Yes ❤️</button>
+<button id="noBtn">No 💔</button>
+</div>
+
+<h2 id="yesText">🎉 You said YES ❤️ 🎉</h2>
+
+<button id="clickHere" onclick="location.href='surprise.html'">
+Click Here 💖
+</button>
+
+<img src="man.png" id="man">
+<img src="girl.png" id="girl">
+<img src="heart.png" id="heart">
+
+<script src="valentine.js"></script>
+
+</body>
+</html>
